@@ -1,0 +1,22 @@
+ALGORITHM noName
+VAR
+    sentence : STRING
+    w, c, v : INTEGER := 0
+    i : INTEGER := 0
+BEGIN
+    write("write a sentence")
+    read(sentence)
+    WHILE (sentence[i] <> ".") DO
+        c = c + 1
+        IF (sentence[i] = ("a" , "e" , "i" , "y" , "u" , "o") ) THEN
+            v = v +1
+        END_IF
+        IF (sentence[i] = " ") THEN
+            w = w +1
+        END_IF
+        i++
+    END_WHILE
+    write(w)
+    write(c)
+    write(v)
+END
